@@ -21,6 +21,11 @@ inputEls.forEach((input) => {
 buttonEl.addEventListener("click", () => {
     // check if empty or email is not formatted correctly -> create error message
     checkInput();
+
+    // after check if all input is correct(doesn't have any error). So, alert to user
+    if (document.querySelectorAll(".error-message").length === 0) {
+        alert("Input is correct.");
+    }
 })
 
 //check input
